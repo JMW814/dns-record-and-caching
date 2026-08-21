@@ -40,23 +40,29 @@ In the domain controller, I created an A record for mainframe and mapped it to t
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="748" height="443" alt="(DNS) mainframe sucess" src="https://github.com/user-attachments/assets/c1d6da76-b94e-48d1-b9f6-1a3dc918f21c" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ I returned to the client virtual machine to nslookup “mainframe’ and ping it.
+
+The nslookup correctly showed “mainframe” as the domain controller, and the ping was also successful, meaning that DNS was now able to resolve “mainframe” to the domain controller's IP address.
+
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1648" height="919" alt="image" src="https://github.com/user-attachments/assets/ce200daf-ad31-44e7-9e36-de8541eac3b7" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next, I went back into the domain controller and updated the mainframe A record to now resolve to Google’s web server instead of the domain controller.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1406" height="818" alt="image" src="https://github.com/user-attachments/assets/7573cebf-5485-4378-b7dd-2b7cc21e7f3f" />
+
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
