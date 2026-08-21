@@ -7,7 +7,7 @@ The objective of this project was to observe what happens when a client attempts
 
 - Microsoft Azure (Virtual Machines)
 - Remote Desktop
-- Active Directory Domain Services
+- DNS Manager
 - PowerShell
 
 <h2>Operating Systems Used </h2>
@@ -65,6 +65,25 @@ Next, I went back into the domain controller and updated the mainframe A record 
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I returned to the client virtual machine and pinged “mainframe” again.
+Even though the A record on the DNS server had been changed, the client continued to resolve “mainframe” to the old IP address.
+ 
+This occurred because the client had cached the previous DNS response. The client did not immediately need to ask the DNS server for the hostname again because it already had a cached result.
+
 </p>
 <br />
+
+<p>
+<img width="1325" height="789" alt="image" src="https://github.com/user-attachments/assets/4c88941f-b462-457d-90da-27788b81bf13" />
+
+
+</p>
+<p>
+Finally, to remove the now-outdated DNS info, I used ipconfig /flushdns to clear the DNS cache so the client can now receive the updated DNS info.
+
+I then re-pinged “mainframe,” and it then successfully resolved to Google’s web server.
+
+</p>
+<br />
+<h2>Conclusion</h2>
+This project demonstrated the complete process of DNS name resolution by failing to find a name, creating an A record, successfully resolving the hostname, changing the record, observing how the DNS cache works, and then clearing the cache to receive the updated DNS information
