@@ -22,18 +22,20 @@ The objective of this project was to observe what happens when a client attempts
 
 To create the test environment for this demonstration, I used 2 virtual machines created in Microsoft Azure. 
 
-Step 1
 <p>
 <img width="811" height="479" alt="(DNS) ping mainframe fail" src="https://github.com/user-attachments/assets/bc90617b-b21b-4bb9-9e04-8baad3d03f14" 
 />
 </p>
 <p>
-On my client virtual machine, I attempted to ping “mainframe”, but because there was no DNS record associated with “mainframe,” the ping ultimately failed.
+ Step 1
+ In Microsoft Azure, I first went to the “resource group” tab and created a resource group. I named it “Lab-AD”. I selected Central US for the region and clicked Create.
+
 </p>
 <br />
 
 <p>
-<img width="701" height="486" alt="(DNS) adding mainframe to dns server" src="https://github.com/user-attachments/assets/2282a88a-4856-4449-95cb-7da3c8d16f6e" />
+<img width="1040" height="674" alt="image" src="https://github.com/user-attachments/assets/08bbdb3a-c611-4eea-97d9-629d4ddb446a" />
+
 
 </p>
 <p>
