@@ -1,7 +1,7 @@
 <p align="center">
 
 <h1>Configuring DNS A-Records and DNS Cache</h1>
-The objective of this project was to observe what happens when a client attempts to resolve a hostname that doesn't have a DNS record, create a record for the hostname, and then observe how the DNS cache affects changes to the record.
+The objective of this project was to utilize virtual machines to observe what happens when a client attempts to resolve a hostname that doesn't have a DNS record, create a record for the hostname, and then observe how the DNS cache affects changes to the record.
 
 <h2>Environments and Technologies Used</h2>
 
