@@ -198,4 +198,4 @@ Once that was done, I pinged mainframe, and this time it correctly sent to Googl
 </p>
 <br />
 <h2>Conclusion</h2>
-This project demonstrated the complete process of DNS name resolution by failing to find a name, creating an A record, successfully resolving the hostname, changing the record, observing how the DNS cache works, and then clearing the cache to receive the updated DNS information
+With the help of 2 Virtual Machines, this project demonstrated the complete process of DNS name resolution by failing to find a name, creating an A record, successfully resolving the hostname, changing the record, observing how the DNS cache works, and then clearing the cache to receive the updated DNS information
