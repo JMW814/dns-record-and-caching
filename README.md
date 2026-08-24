@@ -20,6 +20,8 @@ The objective of this project was to observe what happens when a client attempts
 
 <h2>Deployment and Configuration Steps</h2>
 
+To create the test environment for this demonstration, I used 2 virtual machines created in Microsoft Azure. 
+
 <p>
 <img width="811" height="479" alt="(DNS) ping mainframe fail" src="https://github.com/user-attachments/assets/bc90617b-b21b-4bb9-9e04-8baad3d03f14" 
 />
