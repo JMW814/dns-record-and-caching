@@ -23,8 +23,8 @@ The objective of this project was to observe what happens when a client attempts
 To create the test environment for this demonstration, I used 2 virtual machines created in Microsoft Azure. 
 
 <p>
-<img width="811" height="479" alt="(DNS) ping mainframe fail" src="https://github.com/user-attachments/assets/bc90617b-b21b-4bb9-9e04-8baad3d03f14" 
-/>
+<img width="1040" height="674" alt="image" src="https://github.com/user-attachments/assets/772aa23f-ffa4-4623-9106-6e719b8c48b1" />
+
 </p>
 <p>
  Step 1
