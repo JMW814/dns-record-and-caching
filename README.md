@@ -182,7 +182,7 @@ I then switched back over to client 1
 <p>
  Step 11
  
-In client 1, I opened powerdhell nad attempted to ping mainframe again and observed that it still sent a ping to DC-1 even though I changed mainframe to resolve to Google's web server. This is because in client 1's DNS cache, it still has it saved that mainframe = DC-1
+In client 1, I opened PowerShell and attempted to ping mainframe again and observed that it still sent a ping to DC-1 even though I changed mainframe to resolve to Google's web server. This is because, in client 1's DNS cache, it still has it saved that mainframe = DC-1
 
 For this to be fix this, I need to clear the DNS cache. To do this, I typed the command ipconfig /flushdns, and it successfully cleared the DNS cache
 
