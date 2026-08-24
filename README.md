@@ -5,7 +5,9 @@ The objective of this project was to observe what happens when a client attempts
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines)
+- Microsoft Azure
+- Virtual Machine 1 (Client-1)
+- Virtual Machine 2 (Domain Controller/DNS Server)
 - Remote Desktop
 - DNS Manager
 - PowerShell
