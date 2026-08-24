@@ -132,10 +132,55 @@ I type in the public IP address of Client 1, type in the User and password I cre
 
 </p>
 <p>
-Finally, to remove the now-outdated DNS info, I used ipconfig /flushdns to clear the DNS cache so the client can now receive the updated DNS info.
+Step 7. 
 
-I then re-pinged “mainframe,” and it then successfully resolved to Google’s web server.
+ in the Client 1 VM, I click the Start menu and open the PowerShell application 
 
+In PowerShell, I type “ping mainframe,” but because there was no DNS record associated with “mainframe,” the ping ultimately failed, and I was met with no response.
+</p>
+<br />
+
+<p>
+<img width="811" height="479" alt="(DNS) ping mainframe fail" src="https://github.com/user-attachments/assets/9d4a6f82-0a15-418c-b765-fc05da7bf59a" />
+Step 8
+
+I exit my Client 1 VM and remote desktop into the DC-1 VM. 
+
+I clicked the Start menu, typed Server Manager, entered the application, and went to the DNS tab. I selected the Forward Lookup Zones folder right clicked my mouse and selected “New Host (A or AAAA) to create an A record for mainframe.
+
+In the new host menu, I named it “mainframe” and set the IP address as the private IP of DC-1, so now pinging mainframe will ping DC-1. I clicked Add Host, exited the DC-1 VM, and remote desktoped back into Client-1
+</p>
+<br />
+
+<p>
+<img width="701" height="486" alt="(DNS) adding mainframe to dns server" src="https://github.com/user-attachments/assets/2dfe84eb-d6cf-45f2-adb4-910c5ce68133" />
+</p>
+<p>
+Step-9
+ 
+In client 1, I reopened PowerShell to nslookup and ping mainframe again. The nslookup correctly showed mainframe as DC-1's IP address. The ping was also successful, meaning that DNS was now able to resolve mainframe as DC-1’s IP address. 
+
+I then exited client 1 and entered DC-1
+</p>
+<br />
+
+<p>
+<img width="748" height="443" alt="(DNS) mainframe sucess" src="https://github.com/user-attachments/assets/8afa284c-5939-4ed3-b74f-01ae02ec66ff" />
+</p>
+<p>
+Step 10
+ 
+In DC-1, I went back into the DNS server manager and right-clicked the A record of mainframe I just created to see its properties and edit the record. I changed the IP address from DC-1's to the IP address of Google's web server (8.8.8.8)  and saved it.
+
+I then switched back over to client 1
+</p>
+<br />
+
+<p>
+<img width="824" height="460" alt="(DNS) changing mainframe to 888" src="https://github.com/user-attachments/assets/c651edcb-fc00-43ef-8277-bee64c7ba542" />
+</p>
+<p>
+ 
 </p>
 <br />
 <h2>Conclusion</h2>
