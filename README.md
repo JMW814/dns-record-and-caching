@@ -180,7 +180,21 @@ I then switched back over to client 1
 <img width="824" height="460" alt="(DNS) changing mainframe to 888" src="https://github.com/user-attachments/assets/c651edcb-fc00-43ef-8277-bee64c7ba542" />
 </p>
 <p>
+ Step 11
  
+In client 1, I opened powerdhell nad attempted to ping mainframe again and observed that it still sent a ping to DC-1 even though I changed mainframe to resolve to Google's web server. This is because in client 1's DNS cache, it still has it saved that mainframe = DC-1
+
+For this to be fix this, I need to clear the DNS cache. To do this, I typed the command ipconfig /flushdns, and it successfully cleared the DNS cache
+
+Once that was done, I pinged mainframe, and this time it correctly sent to Google's web server 
+</p>
+<br />
+
+<p>
+<img width="789" height="497" alt="(DNS) changing mainframe and flushing cache" src="https://github.com/user-attachments/assets/248c2aba-46ce-4d74-8184-58d0de4bf030" />
+
+</p>
+<p>
 </p>
 <br />
 <h2>Conclusion</h2>
