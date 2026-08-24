@@ -28,6 +28,7 @@ To create the test environment for this demonstration, I used 2 virtual machines
 </p>
 <p>
  Step 1
+ 
  In Microsoft Azure, I first went to the “resource group” tab and created a resource group. I named it “Lab-AD”. I selected Central US for the region and clicked Create.
 
 </p>
